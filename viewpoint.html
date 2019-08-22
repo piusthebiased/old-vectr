@@ -1,0 +1,265 @@
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #FDFCFD;
+            font-family: 'Roboto', sans-serif;
+            color: #1C1D1D;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100vw;
+            height: 4.5vh;
+            background-color: #333333;
+        }
+
+        .player {
+            margin: 0;
+            width: 78vw;
+            margin-left: 5vw;
+        }
+
+        .mainvideo {
+            margin-top: 8vh;
+            margin-bottom: 1vh;
+            right: 0;
+            border: none;
+            padding: 0;
+            overflow: hidden;
+            width: 68vw;
+            height: 72vh;
+        }
+
+        .searchbar {
+            margin-top: 1.2vh;
+            height: 2vh;
+            width: 38vw;
+            padding: 0.3vw;
+            border: none;
+            font-size: 1vh;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        #videoname {
+            font-size: 26px;
+            margin: 0;
+            margin-bottom: 0.5vh;
+            display: inline;
+        }
+
+        #views {
+            font-size: 18px;
+            margin: 0;
+            margin-top: 0.4vh;
+            color: #777777;
+        }
+
+        #likes {
+            margin-right: 0.5vw;
+            margin-left: 0.5vw;
+            color: #777777;
+            font-size: 13px;
+            display: inline;
+            cursor: pointer;
+        }
+
+        #dislikes {
+            margin-right: 0.5vw;
+            margin-left: 0.5vw;
+            color: #777777;
+            font-size: 13px;
+            display: inline;
+            cursor: pointer;
+        }
+
+        .likearea {
+            float: right;
+            display: inline;
+        }
+
+        .desctext {
+            height: 160px;
+            font-size: 17px;
+            overflow: hidden;
+        }
+
+        .description {
+            position: relative;
+            font-size: 7px;
+            margin-left: 5vw;
+            margin-top: 2vh;
+        }
+
+        label {
+            position: absolute;
+            top: 100%;
+        }
+
+            input[type=checkbox] {
+                display: none;
+            }
+
+            label:after {
+                font-size: 18px;
+                color: #777777;
+                content: "Show More";
+                cursor: pointer;
+            }
+
+            input:checked + label:after {
+                font-size: 18px;
+                color: #777777;
+                content: "Show Less";
+                cursor: pointer;
+            }
+
+            input:checked ~ div {
+                height: 200px;;
+            }
+
+        .recommended {
+            position: fixed;
+            top: 8vh;
+            left: 68vw;
+            font-size: 8px;
+        }
+
+        .recdiv {
+            width: 30vw;
+            height: 10vh;
+            vertical-align: text-top;
+            position: relative;
+        }
+
+        .thumb {
+            width: 10vw;
+            height: 10vh;
+            vertical-align: text-top;
+            float: left;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .title {
+            margin: 0;
+            color: #242424;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 14px;
+            height: 14px;
+            margin-left: 0.5vw;
+            margin-bottom: 4px;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .recviews {
+            top: 0;
+            color: #242424;
+            display: inline-block;
+            font-size: 13px;
+            margin: 0;
+            margin-left: 0.5vw;
+            cursor: pointer;
+            padding: 0;
+        }
+    </style>
+    <title>Sample Video</title>
+</head>
+<body>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <div class="header">
+        <center>
+            <input class="searchbar" type="text" placeholder="Search">
+        </center>
+    </div>
+    <div class="player">
+        <iframe src="main.html" class="mainvideo"></iframe>
+        <br />
+        <p id="videoname">Sample Video</p>
+        <div class="likearea">
+            <i class="fa fa-thumbs-up" style="font-size:19px; color: #555555; margin-left: 1vw; display: inline; cursor: pointer;"></i>
+            <p id="likes">65K</p>
+        </div>
+        <div class="likearea">
+            <i class="fa fa-thumbs-down" style="font-size:19px; color: #555555; margin-left: 2vw; display: inline; cursor: pointer;"></i>
+            <p id="dislikes">1.9K</p>
+        </div>
+        <p id="views">4,132,896 Views</p>
+        <br />
+    </div>
+    <div class="recommended">
+        <div class="recdiv">
+            <img class="thumb" id="thumb1" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title1"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views1">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb2" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title2"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views2">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb3" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title3"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views3">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb4" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title4"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views4">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb5" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title5"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views5">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb5" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title5"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views5">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb5" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title5"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views5">1.3M views</p>
+        </div>
+        <br />
+        <div class="recdiv">
+            <img class="thumb" id="thumb5" src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg">
+            <p class="title" id="title5"><strong>Recommended Video</strong></p><br />
+            <p class="recviews" id="views5">1.3M views</p>
+        </div>
+    </div>
+    <div class="description">
+        <input id="ch" type="checkbox">
+        <label for="ch"></label>
+        <div class="desctext">
+            this<br>is<br>a<br>very<br>good<br>description.<br>change<br>my<br>mind.
+        </div>
+        <br />
+    </div>
+    <br />
+    <br />
+</body>
+</html>
