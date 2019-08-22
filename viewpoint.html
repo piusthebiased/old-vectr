@@ -23,7 +23,7 @@
 
         .player {
             margin: 0;
-            width: 68vw;
+            width: 60vw;
             margin-left: 5vw;
         }
 
@@ -34,8 +34,8 @@
             border: none;
             padding: 0;
             overflow: hidden;
-            width: 68vw;
-            height: 72vh;
+            width: 60vw;
+            height: 64vh;
         }
 
         .searchbar {
@@ -52,21 +52,21 @@
         }
 
         #videoname {
-            font-size: 26px;
+            font-size: 20px;
             margin: 0;
             margin-bottom: 0.5vh;
             display: inline;
         }
 
         #views {
-            font-size: 18px;
+            font-size: 12px;
             margin: 0;
-            margin-top: 0.4vh;
+            margin-top: 1vh;
             color: #777777;
         }
 
         #likes {
-            margin-right: 0vw;
+            margin-right: 0.5vw;
             margin-left: 0.5vw;
             color: #777777;
             font-size: 13px;
@@ -89,8 +89,8 @@
         }
 
         .desctext {
-            height: 160px;
-            font-size: 17px;
+            height: 82px;
+            font-size: 14px;
             overflow: hidden;
         }
 
@@ -98,7 +98,6 @@
             position: relative;
             font-size: 7px;
             margin-left: 5vw;
-            margin-top: 2vh;
         }
 
         label {
@@ -111,14 +110,14 @@
             }
 
             label:after {
-                font-size: 18px;
+                font-size: 15px;
                 color: #777777;
                 content: "Show More";
                 cursor: pointer;
             }
 
             input:checked + label:after {
-                font-size: 18px;
+                font-size: 15px;
                 color: #777777;
                 content: "Show Less";
                 cursor: pointer;
@@ -131,7 +130,7 @@
         .recommended {
             position: fixed;
             top: 8vh;
-            left: 78vw;
+            left: 68vw;
             font-size: 8px;
         }
 
@@ -192,12 +191,12 @@
         <br />
         <p id="videoname">Sample Video</p>
         <div class="likearea">
-            <i class="fa fa-thumbs-down" style="font-size:19px; color: #555555; margin-left: 1vw; display: inline; cursor: pointer;"></i>
-            <p id="dislikes">1.9K</p>
-        </div>
-        <div class="likearea">
             <i class="fa fa-thumbs-up" style="font-size:19px; color: #555555; margin-left: 1vw; display: inline; cursor: pointer;"></i>
             <p id="likes">65K</p>
+        </div>
+        <div class="likearea">
+            <i class="fa fa-thumbs-down" style="font-size:19px; color: #555555; margin-left: 2vw; display: inline; cursor: pointer;"></i>
+            <p id="dislikes">1.9K</p>
         </div>
         <p id="views">4,132,896 Views</p>
         <br />
