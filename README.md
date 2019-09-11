@@ -1,9 +1,9 @@
 # Frontend-Backend
 Project files will be sorted by this direcrory: \
-|-Frontend \
+|--Frontend \
 | \
 | \
-|-Backend \
+|--Backend \
 | \
 | \
-|-UI/UX Drawing *TBD* \
+|--UI/UX Drawing *TBD* \
