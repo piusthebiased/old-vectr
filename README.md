@@ -6,4 +6,4 @@ Project files will be sorted by this direcrory: \
 |--Backend \
 | \
 | \
-|--UI/UX Drawing __*TBD*
+|--UI/UX Drawing __*TBD*__
